@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #24242b;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #252530;
+    text-align: center;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #666;
+    text-align: center;
+}
+
+.pilot-area {
+    position: relative;
+    height: 400px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #f1f1f4;
+}
+
+#pilotImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#pilotName {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.controls,
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 12px;
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    background: #764ba2;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #603b87;
+}
+
+input {
+    min-width: 0;
+    padding: 12px;
+    flex: 2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: #333;
+    color: #fff;
+    content: "Carregando...";
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .pilot-area {
+        height: 300px;
+    }
+}

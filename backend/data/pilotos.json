@@ -1,0 +1,6 @@
+{
+    "carlos-sainz":    ["carlos-sainz/1.jpg",    "carlos-sainz/2.jpg",    "carlos-sainz/3.jpg"],
+    "lando-norris":      ["lando-norris/1.jpg",      "lando-norris/2.jpg",      "lando-norris/3.jpg"],
+    "lewis-hamilton":   ["lewis-hamilton/1.jpg",   "lewis-hamilton/2.jpg",   "lewis-hamilton/3.jpg"],
+    "max-verstappen": ["max-verstappen/1.jpg", "max-verstappen/2.jpg", "max-verstappen/3.jpg"]
+}
